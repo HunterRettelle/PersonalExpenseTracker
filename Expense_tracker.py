@@ -80,7 +80,7 @@ def summarize_expenses(expense_file_path, budget):
     for key, amount in amount_by_category.items():
         print(f"  {key}: ${amount:.2f}")
 
-    total_spent = sum([x.amount for x in expenses])
+    total_spent = sum(x.amount for x in expenses)
     print(f"💵 Total Spent: ${total_spent:.2f}")
 
     remaining_budget = budget - total_spent
