@@ -4,7 +4,7 @@ import datetime
 
 
 def main():
-    print(f"🎯 Running Expense Tracker!")
+    print("🎯 Running Expense Tracker!")
     expense_file_path = "expenses.csv"
     budget = 2000
 
@@ -19,7 +19,7 @@ def main():
 
 
 def get_user_expense():
-    print(f"🎯 Getting User Expense")
+    print("🎯 Getting User Expense")
     expense_name = input("Enter expense name: ")
     expense_amount = float(input("Enter expense amount: "))
     expense_categories = [
@@ -55,7 +55,7 @@ def save_expense_to_file(expense: Expense, expense_file_path):
 
 
 def summarize_expenses(expense_file_path, budget):
-    print(f"🎯 Summarizing User Expense")
+    print("🎯 Summarizing User Expense")
     expenses: list[Expense] = []
     with open(expense_file_path, "r") as f:
         lines = f.readlines()
